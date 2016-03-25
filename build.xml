@@ -1,8 +1,8 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <project name="hafen" default="deftgt">
-  <property name="name" value="amber"/>
-  <property name="version" value=""/>
+  <property name="name" value="ReAmber"/>
+  <property name="version" value="1.0"/>
 
   <target name="build-env">
     <mkdir dir="build" />
@@ -108,7 +108,9 @@
   <target name="deftgt" depends="jars" />
 
   <target name="run" depends="jars">
-    <java jar="build/hafen.jar" fork="true" />
+    <java jar="build/hafen.jar" fork="true">
+    	<arg line="-U http://game.havenandhearth.com/hres/ game.havenandhearth.com" />
+    </java>
   </target>
   
   <target name="clean">

@@ -7,3 +7,7 @@
 *.zip
 amber-*.zip
 /l10n/*_new.properties
+/map
+chatlog.txt
+/bin
+/.settings
